@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         imageWidth = articleImage.offsetWidth;
         articleImage.nextElementSibling.querySelector('.header').style.marginBottom = 'inherit';
         articleImage.style.width = imageWidth + 'px';
-        articleImage.nextElementSibling.style.paddingLeft = (imageWidth + 64) + 'px';
+        articleImage.nextElementSibling.style.paddingLeft = (imageWidth + 48) + 'px';
       }
     }
     if (document.querySelector('#copyLink')) {
