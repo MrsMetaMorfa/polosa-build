@@ -951,7 +951,8 @@ a {
     border: 1px solid #E0E0E0;
     border-radius: 48px;
     padding: 4px 15px;
-    margin-bottom: 8px; }
+    margin-bottom: 8px;
+    line-height: 22px; }
   .article_content {
     margin-bottom: 40px;
     border-bottom: 1px solid #e0e0e0; }
