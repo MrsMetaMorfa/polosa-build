@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (document.querySelector('.compilation')) {
       let itemsOnPage = document.querySelectorAll('.item'), itemWidth, imageHeight;
-      if ((window.innerWidth < 1024) && (window.innerWidth < window.innerHeight)) {
+      if ((window.innerWidth <= 1024) && (window.innerWidth < window.innerHeight)) { //portrait
         itemWidth = itemsOnPage[0].querySelector('.item_image').offsetWidth;
         imageHeight = (itemWidth) / 141 * 212;
         Array.prototype.forEach.call(itemsOnPage, function(elem){
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (document.querySelector('.article')) {
       let articleImage = document.querySelector('.article_image'),
           imageHeight, imageWidth;
-      if ( (window.innerWidth <= 1024) && (window.innerWidth < window.innerHeight) ) {
+      if ( (window.innerWidth <= 1024) && (window.innerWidth < window.innerHeight) ) { //portrait
         articleImage.style.width = 'inherit';
         articleImage.style.height = 'inherit';
         imageWidth = articleImage.offsetWidth;
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         articleImage.nextElementSibling.style.paddingLeft = 0;
         articleImage.style.height = imageHeight + 'px';
         articleImage.nextElementSibling.querySelector('.header').style.marginBottom = imageHeight + 'px';
-      } else if ((window.innerWidth > 1024) && (window.innerWidth > window.innerHeight)) {
+      } else if ((window.innerWidth > 1024) && (window.innerWidth > window.innerHeight)) { //landscape
         articleImage.style.width = 'inherit';
         articleImage.style.height = 'inherit';
         imageHeight = articleImage.offsetHeight;
