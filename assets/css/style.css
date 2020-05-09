@@ -551,6 +551,9 @@ body {
       border-color: #333333; }
     body.dark .item_image img {
       background: #333333; }
+    body.dark .main .tag.current:after {
+      -webkit-filter: invert(0.92);
+              filter: invert(0.92); }
   body.light {
     background: #fff;
     color: #000; }
@@ -572,6 +575,9 @@ body {
       border-color: #333333; }
     body.light .item_image img {
       background: #F2F2F2; }
+    body.light .main .tag.current:after {
+      -webkit-filter: invert(0);
+              filter: invert(0); }
 
 img {
   display: block;
@@ -737,6 +743,17 @@ a {
   white-space: nowrap;
   padding: 5px 16px;
   line-height: 22px; }
+  .main .tag.current {
+    position: relative;
+    display: flex; }
+    .main .tag.current:after {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      margin: -3px -14px -3px 12px;
+      background: url("../img/Subtract.svg") no-repeat center/100%; }
 
 .compilation {
   padding: 72px 0 0; }
@@ -765,10 +782,10 @@ a {
   .compilation_body {
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-bottom: 32px; }
+    padding-bottom: 24px; }
     .compilation_body .item {
       width: calc((100% - 120px) / 4);
-      margin-bottom: 40px;
+      margin-bottom: 48px;
       margin-right: 40px; }
       .compilation_body .item:nth-of-type(4n) {
         margin-right: 0; }
@@ -1081,6 +1098,9 @@ a {
     width: calc(100% - 32px);
     margin: 0 auto;
     text-align: center; }
+    .more .btn {
+      font-size: 16px;
+      line-height: 22px; }
   .footer {
     width: calc(100% - 32px);
     margin: 0 auto;
@@ -1122,6 +1142,7 @@ a {
       border: none;
       margin: 0;
       opacity: .5;
+      font-size: 18px;
       line-height: 23px; }
     .article_content {
       margin-bottom: 32px; }
@@ -1151,6 +1172,7 @@ a {
         width: calc(100% + 8px); }
         .article_socials .socials_list .btn {
           font-size: 16px;
+          line-height: 22px;
           margin: 0 4px 8px; }
   .rate, .nav, .item_tags {
     display: none; }
@@ -1184,4 +1206,7 @@ a {
     body .article_views {
       border-color: #333333; }
     body .item_image img {
-      background: #333333; } }
+      background: #333333; }
+    body .main .tag.current:after {
+      -webkit-filter: invert(0.92);
+              filter: invert(0.92); } }
