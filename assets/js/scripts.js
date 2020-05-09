@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (document.querySelector('.article')) {
       let articleImage = document.querySelector('.article_image'),
           imageHeight, imageWidth;
-      if ( (window.innerWidth < 1024) && (window.innerWidth < window.innerHeight) ) {
+      if ( (window.innerWidth <= 1024) && (window.innerWidth < window.innerHeight) ) {
         articleImage.style.width = 'inherit';
         articleImage.style.height = 'inherit';
         imageWidth = articleImage.offsetWidth;
@@ -43,11 +43,19 @@ document.addEventListener('DOMContentLoaded', function() {
         articleImage.nextElementSibling.style.left = 0;
         articleImage.style.height = imageHeight + 'px';
         articleImage.nextElementSibling.querySelector('.header').style.marginBottom = imageHeight + 'px';
-      } else {
+      } else if ((window.innerWidth > 1024) && (window.innerWidth > window.innerHeight)) {
         articleImage.style.width = 'inherit';
         articleImage.style.height = 'inherit';
         imageHeight = articleImage.offsetHeight;
         imageWidth = (imageHeight) / 212 * 141;
+        articleImage.nextElementSibling.querySelector('.header').style.marginBottom = 'inherit';
+        articleImage.style.width = imageWidth + 'px';
+        articleImage.nextElementSibling.style.left = imageWidth + 'px';
+      } else {
+        articleImage.style.width = 'inherit';
+        articleImage.style.height = 'inherit';
+        imageHeight = articleImage.offsetHeight;
+        imageWidth = articleImage.offsetWidth;
         articleImage.nextElementSibling.querySelector('.header').style.marginBottom = 'inherit';
         articleImage.style.width = imageWidth + 'px';
         articleImage.nextElementSibling.style.left = imageWidth + 'px';
