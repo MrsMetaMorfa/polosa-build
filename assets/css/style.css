@@ -527,7 +527,7 @@ body {
   background: #fff;
   color: #000;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 1.3125;
   min-height: 100vh;
   font-family: "PT Sans", Roboto, Helvetica, sans-serif; }
   body.dark {
@@ -585,7 +585,7 @@ picture {
   display: block; }
 
 p, h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 1.375em; }
+  margin: 0 0 1.3125em; }
 
 p {
   font-size: 1rem; }
@@ -738,7 +738,8 @@ a {
 
 .main .tag {
   white-space: nowrap;
-  padding: 5px 16px; }
+  padding: 5px 16px;
+  line-height: 22px; }
 
 .compilation {
   padding: 72px 0 0; }
@@ -748,10 +749,12 @@ a {
     margin-bottom: 32px; }
   .compilation_title {
     font-size: 32px;
+    line-height: 41px;
     font-weight: normal;
     margin-bottom: 0; }
   .compilation .rate_btn {
-    margin-left: 12px; }
+    margin-left: 12px;
+    line-height: 22px; }
     .compilation .rate_btn span {
       display: inline-block; }
   .compilation .rate_now {
@@ -775,6 +778,7 @@ a {
   .compilation:not(:last-child) .compilation_body {
     border-bottom: 1px solid #e0e0e0; }
   .compilation .see_all.btn {
+    line-height: 22px;
     background: rgba(0, 0, 0, 0.1) !important;
     color: inherit; }
   .compilation.yellow {
@@ -824,7 +828,8 @@ a {
   margin-bottom: 4px; }
   .item_tags .tag {
     margin-right: 8px;
-    margin-bottom: 8px; }
+    margin-bottom: 8px;
+    line-height: 22px; }
     .item_tags .tag:not(:first-child) {
       margin-left: 0; }
 
@@ -844,7 +849,8 @@ a {
 
 .item_data {
   font-size: 20px;
-  opacity: .5; }
+  opacity: .5;
+  margin-bottom: 0; }
 
 .more {
   padding: 24px 0 72px;
@@ -968,6 +974,10 @@ a {
         margin-right: 8px;
         margin-bottom: 8px; }
 
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+  .article_content--inner {
+    width: 100%; } }
+
 @media screen and (max-width: 1024px) and (orientation: landscape) {
   .compilation_header {
     flex-wrap: wrap; }
@@ -976,8 +986,6 @@ a {
     max-width: 40%; }
   .article_body {
     padding: 0 48px 50px calc(100vh / 212 * 141 + 48px); }
-  .article_content--inner {
-    width: 100%; }
   .article .header {
     width: 100%; }
   .footer {
@@ -1050,7 +1058,8 @@ a {
       border-bottom: 1px solid #e0e0e0;
       margin-bottom: 24px;
       padding-bottom: 24px;
-      min-height: 97px; }
+      min-height: 97px;
+      margin-right: 0; }
       .compilation .item_image {
         width: 48px;
         position: absolute;
