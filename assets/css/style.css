@@ -638,9 +638,6 @@ a {
     color: #333333;
     position: relative;
     overflow: hidden; }
-    .btn-default span {
-      position: relative;
-      z-index: 10; }
     .btn-default:before {
       content: '';
       display: block;
