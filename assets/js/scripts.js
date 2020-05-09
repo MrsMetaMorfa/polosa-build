@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         imageWidth = articleImage.offsetWidth;
         imageHeight = articleImage.offsetHeight;
         console.log(imageHeight, imageWidth);
-        articleImage.nextElementSibling.style.left = 0;
+        articleImage.nextElementSibling.style.paddingLeft = 0;
         articleImage.style.height = imageHeight + 'px';
         articleImage.nextElementSibling.querySelector('.header').style.marginBottom = imageHeight + 'px';
       } else if ((window.innerWidth > 1024) && (window.innerWidth > window.innerHeight)) {
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         imageWidth = (imageHeight) / 212 * 141;
         articleImage.nextElementSibling.querySelector('.header').style.marginBottom = 'inherit';
         articleImage.style.width = imageWidth + 'px';
-        articleImage.nextElementSibling.style.left = imageWidth + 'px';
+        articleImage.nextElementSibling.style.paddingLeft = (imageWidth + 64) + 'px';
       } else {
         articleImage.style.width = 'inherit';
         articleImage.style.height = 'inherit';
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         imageWidth = articleImage.offsetWidth;
         articleImage.nextElementSibling.querySelector('.header').style.marginBottom = 'inherit';
         articleImage.style.width = imageWidth + 'px';
-        articleImage.nextElementSibling.style.left = imageWidth + 'px';
+        articleImage.nextElementSibling.style.paddingLeft = (imageWidth + 64) + 'px';
       }
     }
     if (document.querySelector('#copyLink')) {

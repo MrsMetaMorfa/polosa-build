@@ -545,6 +545,10 @@ body {
       color: #000; }
     body.dark .article_image {
       background: #333333; }
+    body.dark .article_content figure img {
+      background: #333333; }
+    body.dark .item_image img {
+      background: #333333; }
   body.light {
     background: #fff;
     color: #000; }
@@ -559,6 +563,10 @@ body {
     body.light .compilation--colored {
       color: #000; }
     body.light .article_image {
+      background: #F2F2F2; }
+    body.light .article_content figure img {
+      background: #F2F2F2; }
+    body.light .item_image img {
       background: #F2F2F2; }
 
 img {
@@ -795,6 +803,7 @@ a {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    background: #F2F2F2;
     transition: transform .2s ease-in-out; }
   .item_image:hover img, .item_image:focus img {
     transform: scale(1.05);
@@ -847,7 +856,6 @@ a {
     top: 0;
     left: 0;
     bottom: 0;
-    z-index: 100;
     overflow: hidden;
     margin: 0;
     width: calc(100vh / 212 * 141);
@@ -877,12 +885,12 @@ a {
     right: 0;
     bottom: 0;
     overflow: auto;
-    padding: 0 64px 50px; }
+    left: 0;
+    padding: 0 64px 50px calc(100vh / 212 * 141 + 64px); }
   .article .header {
     justify-content: space-between;
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 16px;
     border-bottom-color: transparent !important; }
     .article .header_logo {
       opacity: .25;
@@ -892,6 +900,7 @@ a {
   .article_title {
     font-size: 32px;
     margin-bottom: 24px;
+    padding-top: 56px;
     max-width: 840px;
     line-height: 41px; }
   .article_info-top {
@@ -928,7 +937,8 @@ a {
       margin: 0 0 40px;
       width: 100%; }
       .article_content figure img {
-        width: 100%; }
+        width: 100%;
+        background: #F2F2F2; }
       .article_content figure figcaption {
         opacity: .45;
         margin-top: 8px; }
@@ -953,8 +963,7 @@ a {
     position: absolute;
     width: 100%;
     top: 96px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     max-height: 456px; }
     .article_image img {
       -o-object-fit: cover;
@@ -1110,7 +1119,8 @@ a {
       .article .header_close {
         display: none; }
     .article_body {
-      padding: 0 0 24px; }
+      padding: 0 0 24px;
+      overflow-x: hidden; }
     .article_image {
       top: 64px; }
       .article_image-caption {
@@ -1180,4 +1190,8 @@ a {
         background: rgba(0, 0, 0, 0.1);
         color: #000; }
     body .article_image {
+      background: #333333; }
+    body .article_content figure img {
+      background: #333333; }
+    body .item_image img {
       background: #333333; } }
