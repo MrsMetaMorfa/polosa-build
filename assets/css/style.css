@@ -612,7 +612,7 @@ body {
     body.light .tag {
       background: transparent; }
       body.light .tag:before {
-        background: rgba(0, 0, 0, 0.1); }
+        background: rgba(0, 0, 0, 0.05); }
     body.light .compilation .rate_btn {
       background: transparent;
       border-color: #e0e0e0; }
@@ -686,7 +686,7 @@ a {
       content: '';
       display: block;
       position: absolute;
-      background: rgba(0, 0, 0, 0.1);
+      background: rgba(0, 0, 0, 0.5);
       top: 0;
       bottom: 0;
       left: 0;
