@@ -741,12 +741,12 @@ a {
     width: 100%; }
   .header_bottom {
     opacity: .5;
-    margin-top: 30px;
-    font-size: 14px;
-    line-height: 18px; }
+    margin-top: 30px; }
     .header_bottom p {
       margin: 0;
-      padding-top: 8px; }
+      padding-top: 8px;
+      font-size: 14px;
+      line-height: 18px; }
   .header_language, .header_menu, .header_notification {
     position: relative; }
     .header_language ul, .header_menu ul, .header_notification ul {
