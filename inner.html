@@ -23,30 +23,55 @@
   <body>
   <!-- For dark theme add class 'dark' for body.  -->
   <!-- For light theme add class 'light' for body.  -->
-    <div class="wrapper">
+  <div class="content">
+    
+
+    <div class="content-wrapper">
       
-  <header class="header container" role="banner">
-  <a href="index.html" class="btn header_logo">
-    <img src="assets/img/logo.svg" alt="Polosa Media Logo" />
-  </a>
-  <div class="header_top container">
-    <nav class="header_menu">
-      <button class="btn btn-icon" type="button">
-        <img src="assets/img/menu-icon.svg" alt="Toggle Menu Icon" />
-      </button>
-      <ul class="menu">
-        <li class="menu_item">
-          <a href="info.html" class="btn menu_link">О проекте</a>
-        </li>
-        <li class="menu_item">
-          <a href="info.html" class="btn menu_link">Редакция</a>
-        </li>
-        <li class="menu_item">
-          <a href="info.html" class="btn menu_link">Контакты</a>
-        </li>
-      </ul>
+  <header class="header" role="banner">
+  <div class="wrapper container">
+    <a href="index.html" class="btn header_logo">
+      <img src="assets/img/logo.svg" alt="Polosa Media Logo" />
+    </a>
+    <nav class="header_tags nav container">
+      <!-- All tags in main list. div.tag_list must be empty, this functional is client side -->
+      <a href="index.html" class="btn btn-default tag" id="navAll">Все новости</a>
+      <a href="inner.html" class="btn btn-default tag" id="navImportant">Важно</a>
+      <a href="inner.html" class="btn btn-default tag" id="navCorona">Коронавирус</a>
+      <a href="inner.html" class="btn btn-default tag" id="navPolitics">Политика</a>
+      <a href="inner.html" class="btn btn-default tag" id="navFinance">Финансы</a>
+      <a href="inner.html" class="btn btn-default tag" id="navInternet">Интернет</a>
+      <a href="inner.html" class="btn btn-default tag" id="navWorld">В мире</a>
+      <a href="inner.html" class="btn btn-default tag" id="navSport">Спорт</a>
+      <a href="inner.html" class="btn btn-default tag" id="navAuto">Авто</a>
+      <a href="inner.html" class="btn btn-default tag" id="navSociety">Общество</a>
+      <a href="inner.html" class="btn btn-default tag" id="navTranslation">Трансляция</a>
+      <a href="inner.html" class="btn btn-default tag" id="navNature">Природа</a>
+      <a href="inner.html" class="btn btn-default tag" id="navInterview">Интервью</a>
+      <a href="inner.html" class="btn btn-default tag blue color-white current" id="navOfftop">Оффтоп</a>
+
+      <div class="tag-wrapper">
+        <button type="button" class="btn btn-default tag-button" id="showMore">Ещё <img src="assets/img/arrow-down.svg" alt=""></button>
+        <div class="tag_list"></div>
+      </div>
     </nav>
     <div class="header_functional container">
+      <nav class="header_menu">
+        <button class="btn btn-icon" type="button">
+          <img src="assets/img/menu-icon.svg" alt="Toggle Menu Icon" />
+        </button>
+        <ul class="menu">
+          <li class="menu_item">
+            <a href="info.html" class="btn menu_link">О проекте</a>
+          </li>
+          <li class="menu_item">
+            <a href="info.html" class="btn menu_link">Редакция</a>
+          </li>
+          <li class="menu_item">
+            <a href="info.html" class="btn menu_link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
       <div class="header_language">
         <button class="btn btn-icon" type="button">
           <img src="assets/img/language-icon.svg" alt="Toggle Menu Icon" />
@@ -72,47 +97,21 @@
       </div>
     </div>
   </div>
-  <div class="header_bottom container">
-    <p class="header_data">Пятиница, 10 мая, 2020</p>
-    <p class="header_certificate">Свидетельство о регистрации СМИ ЭЛ № ФС 77–70219</p>
-  </div>
 </header>
 
 
 
       <main class="main" role="main">
         
-  <nav class="nav container">
-    <!-- All tags in main list. div.tag_list must be empty, this functional is client side -->
-    <a href="index.html" class="btn btn-default tag" id="navAll">Все новости</a>
-    <a href="inner.html" class="btn btn-default tag" id="navImportant">Важно</a>
-    <a href="inner.html" class="btn btn-default tag" id="navCorona">Коронавирус</a>
-    <a href="inner.html" class="btn btn-default tag" id="navPolitics">Политика</a>
-    <a href="inner.html" class="btn btn-default tag" id="navFinance">Финансы</a>
-    <a href="inner.html" class="btn btn-default tag" id="navInternet">Интернет</a>
-    <a href="inner.html" class="btn btn-default tag" id="navWorld">В мире</a>
-    <a href="inner.html" class="btn btn-default tag" id="navSport">Спорт</a>
-    <a href="inner.html" class="btn btn-default tag" id="navAuto">Авто</a>
-    <a href="inner.html" class="btn btn-default tag" id="navSociety">Общество</a>
-    <a href="inner.html" class="btn btn-default tag" id="navTranslation">Трансляция</a>
-    <a href="inner.html" class="btn btn-default tag" id="navNature">Природа</a>
-    <a href="inner.html" class="btn btn-default tag" id="navInterview">Интервью</a>
-    <a href="inner.html" class="btn btn-default blue color-white tag current" id="navOfftop">Оффтоп</a>
-
-    <div class="tag-wrapper">
-      <button type="button" class="btn btn-default tag-button" id="showMore">Ещё <img src="assets/img/arrow-down.svg" alt=""></button>
-      <div class="tag_list"></div>
-    </div>
-  </nav>
-
   <h1 class="visually-hidden">Информационное Агенство Полоса</h1>
 
   <section class="compilation today">
-    <div class="compilation_header">
-      <h2 class="compilation_title">Оффтоп</h2>
-    </div>
-    <div class="compilation_body container">
-      
+    <div class="wrapper">
+      <div class="compilation_header">
+        <h2 class="compilation_title">Оффтоп</h2>
+      </div>
+      <div class="compilation_body container">
+        
   <div class="item wide">
     <a href="article.html" class="btn item_image">
       <img src="assets/img/image 17.jpg" alt="В России выявили более 7900 новых случаев заражения коронавирусом">
@@ -140,7 +139,7 @@
     <p class="item_data">29 тыс. прочтений</p>
   </div>
 
-      
+        
   <div class="item ">
     <a href="article.html" class="btn item_image">
       <img src="assets/img/image 17 (1).jpg" alt="У Михаила Мишустина обнаружен коронавирус">
@@ -154,7 +153,7 @@
     <p class="item_data">29 тыс. прочтений</p>
   </div>
 
-      
+        
   <div class="item ">
     <a href="article.html" class="btn item_image">
       <img src="assets/img/image 17 (2).jpg" alt="Европейские страны планируют ослабить ограничения из-за эпидемии">
@@ -200,7 +199,7 @@
     <p class="item_data">29 тыс. прочтений</p>
   </div>
 
-      
+        
   <div class="item ">
     <a href="article.html" class="btn item_image">
       <img src="assets/img/image 17 (3).jpg" alt="Крупнейшие сталелитейные компании России объявили о сокращении инвестиций">
@@ -222,7 +221,7 @@
     <p class="item_data">29 тыс. прочтений</p>
   </div>
 
-      
+        
   <div class="item ">
     <a href="article.html" class="btn item_image">
       <img src="assets/img/image 17 (2).jpg" alt="Европейские страны планируют ослабить ограничения из-за эпидемии">
@@ -244,7 +243,7 @@
     <p class="item_data">29 тыс. прочтений</p>
   </div>
 
-      
+        
   <div class="item wide">
     <a href="article.html" class="btn item_image">
       <img src="assets/img/image 17 (3).jpg" alt="Крупнейшие сталелитейные компании России объявили о сокращении инвестиций">
@@ -266,15 +265,17 @@
     <p class="item_data">29 тыс. прочтений</p>
   </div>
 
+      </div>
     </div>
   </section>
 
   <section class="compilation yesterday">
-    <div class="compilation_header">
+    <div class="wrapper">
+      <div class="compilation_header">
       <h2 class="compilation_title">29 февраля</h2>
       <p class="compilation_subtitle">Вчера</p>
     </div>
-    <div class="compilation_body container">
+      <div class="compilation_body container">
       
   <div class="item ">
     <a href="article.html" class="btn item_image">
@@ -420,14 +421,16 @@
   </div>
 
     </div>
+    </div>
   </section>
 
   <section class="compilation day">
-    <div class="compilation_header">
+    <div class="wrapper">
+      <div class="compilation_header">
       <h2 class="compilation_title">28 февраля</h2>
       <p class="compilation_subtitle">Позавчера</p>
     </div>
-    <div class="compilation_body container">
+      <div class="compilation_body container">
       
   <div class="item ">
     <a href="article.html" class="btn item_image">
@@ -514,15 +517,17 @@
     <p class="item_data">29 тыс. прочтений</p>
   </div>
 
+    </div>
     </div>
   </section>
 
   <section class="compilation day">
-    <div class="compilation_header">
+    <div class="wrapper">
+      <div class="compilation_header">
       <h2 class="compilation_title">27 февраля</h2>
       <p class="compilation_subtitle">3 дня назад</p>
     </div>
-    <div class="compilation_body container">
+      <div class="compilation_body container">
       
   <div class="item ">
     <a href="article.html" class="btn item_image">
@@ -609,53 +614,60 @@
     <p class="item_data">29 тыс. прочтений</p>
   </div>
 
+    </div>
     </div>
   </section>
 
   <section class="more container">
-    <p class="more_empty" style="display: none;">Извините, больше новостей нет</p>
-    <!-- onclick can be deleted or modified -->
-    <button class="btn btn-default btn-square" type="button" id="loadMore"
-            onclick="setTimeout( () => {
-                console.log(this.parentNode.querySelector('p'));
-              this.parentNode.querySelector('p').style.display = 'block';
-              this.style.display = 'none';
-            }, 1000)"
-    ><span>Загрузить ещё</span></button>
+    <div class="wrapper">
+      <p class="more_empty" style="display: none;">Извините, больше новостей нет</p>
+      <!-- onclick can be deleted or modified -->
+      <button class="btn btn-default btn-square" type="button" id="loadMore"
+              onclick="setTimeout( () => {
+                  console.log(this.parentNode.querySelector('p'));
+                this.parentNode.querySelector('p').style.display = 'block';
+                this.style.display = 'none';
+              }, 1000)"
+      ><span>Загрузить ещё</span></button>
+    </div>
   </section>
 
 
       </main>
 
       
-  <footer class="footer container" role="contentinfo">
-  <div class="footer_info">
-    <a href="index.html" class="btn footer_logo">
-      <img src="assets/img/logo.svg" alt="Polosa Media Logo" />
-    </a>
-    <p class="footer_about">
-      Свидетельство о регистрации СМИ ЭЛ № ФС 68466 выдано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор)
-    </p>
-    <p class="footer_about">
-      Информационный новостной сайт «Полоса». Все права защищены. При цитировании информации активная гиперссылка на Polosa.io обязательна. Редакция не несет ответственности за информацию и мнения, высказанные в комментариях читателей и новостных материалах, составленных на основе сообщений читателей.
-    </p>
-    <p class="footer_about">
-      Главный редактор: Газов Р.Х. <br/>
-      Адрес электронной почты редакции: <a href="mailto:Roodino@yandex.ru" class="btn">Roodino@yandex.ru</a>
-    </p>
-    <p class="footer_copyright">© 2020 Полоса</p>
+  <footer class="footer" role="contentinfo">
+  <div class="wrapper container">
+    <div class="footer_info">
+      <a href="index.html" class="btn footer_logo">
+        <img src="assets/img/logo.svg" alt="Polosa Media Logo" />
+      </a>
+      <p class="footer_about">
+        Свидетельство о регистрации СМИ ЭЛ № ФС 68466 выдано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор)
+      </p>
+      <p class="footer_about">
+        Информационный новостной сайт «Полоса». Все права защищены. При цитировании информации активная гиперссылка на Polosa.io обязательна. Редакция не несет ответственности за информацию и мнения, высказанные в комментариях читателей и новостных материалах, составленных на основе сообщений читателей.
+      </p>
+      <p class="footer_about">
+        Главный редактор: Газов Р.Х. <br/>
+        Адрес электронной почты редакции: <a href="mailto:Roodino@yandex.ru" class="btn">Roodino@yandex.ru</a>
+      </p>
+      <p class="footer_copyright">© 2020 Полоса</p>
+    </div>
+    <nav class="footer_nav container">
+      <a href="" class="btn btn-default btn-square nav_link">О проекте</a>
+      <a href="" class="btn btn-default btn-square nav_link">Контакты</a>
+      <a href="" class="btn btn-default btn-square nav_link">Политика конфиденциальности</a>
+      <a href="" class="btn btn-default btn-square nav_link">Пользовательское соглашение</a>
+    </nav>
   </div>
-  <nav class="footer_nav container">
-    <a href="" class="btn btn-default btn-square nav_link">О проекте</a>
-    <a href="" class="btn btn-default btn-square nav_link">Контакты</a>
-    <a href="" class="btn btn-default btn-square nav_link">Политика конфиденциальности</a>
-    <a href="" class="btn btn-default btn-square nav_link">Пользовательское соглашение</a>
-  </nav>
 </footer>
 
 
     </div>
-    <script src="assets/js/scripts.min.js"></script>
+  </div>
+
+  <script src="assets/js/scripts.min.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
