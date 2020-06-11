@@ -624,8 +624,6 @@ body {
     body.light .compilation .rate_btn {
       background: transparent;
       border-color: #e0e0e0; }
-    body.light .compilation_subtitle {
-      color: #333333; }
 
 img {
   display: block;
@@ -830,7 +828,8 @@ a {
     max-height: 34px; }
     .header_tags .tag {
       margin: 0 6px 0;
-      display: inline-flex; }
+      display: inline-flex;
+      padding: 5px 16px; }
       .header_tags .tag:first-of-type {
         margin-left: 0;
         background: #F2F2F2; }
@@ -890,8 +889,10 @@ a {
       padding: 4px 0; }
     .header--article .header_close {
       background: transparent;
-      padding: 10px 13px;
+      padding: 8px;
       margin-left: auto; }
+      .header--article .header_close svg {
+        display: block; }
       .header--article .header_close span {
         visibility: hidden;
         position: absolute;
@@ -966,8 +967,6 @@ a {
     font-size: 18px;
     line-height: 23px; }
   .compilation_subtitle {
-    margin-top: 2px;
-    color: #333333;
     opacity: 0.5;
     font-size: 18px;
     line-height: 23px;
