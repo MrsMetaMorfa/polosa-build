@@ -106,24 +106,34 @@
         <h1 class="article_title">Свидетель Иеговы из Пскова осужден на 6 лет тюрьмы за экстремизм</h1>
         <p class="article_info-top container">
           <button type="button" class="btn btn-default btn-square blue color-white" id="">Прослушать новость</button>
-
-          <button class="btn btn-default btn-square" id="">Поделиться</button>
+          <span class="share">
+            <button class="btn btn-default btn-square share_button" id="">Поделиться</button>
+            <span class="share_list">
+              <!-- <a href=''> can be <button type='button'> -->
+              <a href="#" class="btn btn-default btn-square share_button" id="">Вконтакте</a>
+              <a href="#" class="btn btn-default btn-square share_button" id="">Facebook</a>
+              <a href="#" class="btn btn-default btn-square share_button" id="">Twitter</a>
+              <button type="button" class="btn btn-default btn-square share_button" id="copyLink">Скопировать ссылку</button>
+            </span>
+          </span>
         </p>
         <div class="article_content">
           <div class="article_content--inner">
             <p>Мэр Москвы Сергей Собянин объявил о смягчении карантина в Москве. С 1 июня Собянин предлагает возобновить работу магазинов непродовольственного сегмента, а также предприятий бытовых услуг, не требующих длительного контакта с посетителями.</p>
             <p>Также, заявил Собянин, в тестовом режиме планируется разрешить прогулки граждан — по графику, «по домам», «чтобы не все сразу» и не было «первомайской демонстрации».
               <a href="">здесь</a>.</p>
-            <blockquote class="blockquote container">
-              <div class="blockquote_image">
-                <img src="assets/img/Rectangle 14 (2).jpg" alt="">
-              </div>
-              <div class="blockquote_body">
-                <header>
+            <blockquote class="blockquote">
+              <header class="blockquote_header container">
+                <div class="blockquote_image">
+                  <img src="assets/img/Rectangle 14 (2).jpg" alt="">
+                </div>
+                <div class="blockquote_source">
                   <cite>Иван Рудской</cite>
                   <p>Блогер</p>
-                </header>
-                <p>В Москве с конца марта до конца мая действуют ограничения, введенные из-за распространения коронавирусной инфекции. В частности, в городе введен пропускной режим.</p>
+                </div>
+              </header>
+              <div class="blockquote_body">
+                <p>Понимаете, то, что Гордон хочет взять у меня интервью — такая же глупость, как если бы Штрейхер позвонил Левитану во время Великой Отечественной войны и попытался взять.</p>
                 <footer>Сообщил нашему изданию блогер</footer>
               </div>
             </blockquote>
@@ -152,65 +162,73 @@
           </div>
         </div>
         <div class="article_translation">
-            <div class="translation_header container">
-              <h2 class="translation_title container">
-                <img src="assets/img/translation-logo.svg" alt="Translation icon">
-                <span>Трансляция мнений</span>
-              </h2>
-              <p class="translation_renew">Обновлено только что</p>
-              <div class="line animated" style="animation-duration: 5s;"></div>
-            </div>
-            <div class="translation_body">
-              <blockquote class="blockquote container">
-                <div class="blockquote_image">
-                  <img src="assets/img/Rectangle 14 (2).jpg" alt="">
-                </div>
-                <div class="blockquote_body">
-                  <header>
-                    <cite>Иван Рудской</cite>
-                    <p>Блогер</p>
-                  </header>
-                  <p>Понимаете, то, что Гордон хочет взять у меня интервью — такая же глупость, как если бы Штрейхер позвонил Левитану во время Великой Отечественной войны и попытался взять.</p>
-                </div>
-              </blockquote>
-              <blockquote class="blockquote container">
-                <div class="blockquote_image">
-                  <img src="assets/img/Rectangle 14 (2).jpg" alt="">
-                </div>
-                <div class="blockquote_body">
-                  <header>
-                    <cite>Иван Рудской</cite>
-                    <p>Блогер</p>
-                  </header>
-                  <p>Понимаете, то, что Гордон хочет взять у меня интервью — такая же глупость, как если бы Штрейхер позвонил Левитану во время Великой Отечественной войны и попытался взять.</p>
-                </div>
-              </blockquote>
-              <blockquote class="blockquote container">
-                <div class="blockquote_image">
-                  <img src="assets/img/Rectangle 14 (2).jpg" alt="">
-                </div>
-                <div class="blockquote_body">
-                  <header>
-                    <cite>Иван Рудской</cite>
-                    <p>Блогер</p>
-                  </header>
-                  <p>Понимаете, то, что Гордон хочет взять у меня интервью — такая же глупость, как если бы Штрейхер позвонил Левитану во время Великой Отечественной войны и попытался взять.</p>
-                </div>
-              </blockquote>
-              <blockquote class="blockquote container">
-                <div class="blockquote_image">
-                  <img src="assets/img/Rectangle 14 (2).jpg" alt="">
-                </div>
-                <div class="blockquote_body">
-                  <header>
-                    <cite>Иван Рудской</cite>
-                    <p>Блогер</p>
-                  </header>
-                  <p>Понимаете, то, что Гордон хочет взять у меня интервью — такая же глупость, как если бы Штрейхер позвонил Левитану во время Великой Отечественной войны и попытался взять.</p>
-                </div>
-              </blockquote>
-            </div>
+          <div class="translation_header container">
+            <h2 class="translation_title container">
+              <img src="assets/img/translation-logo.svg" alt="Translation icon">
+              <span>Трансляция мнений</span>
+            </h2>
+            <p class="translation_renew">Обновлено только что</p>
+            <div class="line animated" style="animation-duration: 5s;"></div>
           </div>
+          <div class="translation_body">
+            <blockquote class="blockquote">
+              <header class="blockquote_header container">
+                <div class="blockquote_image">
+                  <img src="assets/img/Rectangle 14 (2).jpg" alt="">
+                </div>
+                <div class="blockquote_source">
+                  <cite>Иван Рудской</cite>
+                  <p>Блогер</p>
+                </div>
+              </header>
+              <div class="blockquote_body">
+                <p>Понимаете, то, что Гордон хочет взять у меня интервью — такая же глупость, как если бы Штрейхер позвонил Левитану во время Великой Отечественной войны и попытался взять.</p>
+              </div>
+            </blockquote>
+            <blockquote class="blockquote">
+              <header class="blockquote_header container">
+                <div class="blockquote_image">
+                  <img src="assets/img/Rectangle 14 (2).jpg" alt="">
+                </div>
+                <div class="blockquote_source">
+                  <cite>Иван Рудской</cite>
+                  <p>Блогер</p>
+                </div>
+              </header>
+              <div class="blockquote_body">
+                <p>Понимаете, то, что Гордон хочет взять у меня интервью — такая же глупость, как если бы Штрейхер позвонил Левитану во время Великой Отечественной войны и попытался взять.</p>
+              </div>
+            </blockquote>
+            <blockquote class="blockquote">
+              <header class="blockquote_header container">
+                <div class="blockquote_image">
+                  <img src="assets/img/Rectangle 14 (2).jpg" alt="">
+                </div>
+                <div class="blockquote_source">
+                  <cite>Иван Рудской</cite>
+                  <p>Блогер</p>
+                </div>
+              </header>
+              <div class="blockquote_body">
+                <p>Понимаете, то, что Гордон хочет взять у меня интервью — такая же глупость, как если бы Штрейхер позвонил Левитану во время Великой Отечественной войны и попытался взять.</p>
+              </div>
+            </blockquote>
+            <blockquote class="blockquote">
+              <header class="blockquote_header container">
+                <div class="blockquote_image">
+                  <img src="assets/img/Rectangle 14 (2).jpg" alt="">
+                </div>
+                <div class="blockquote_source">
+                  <cite>Иван Рудской</cite>
+                  <p>Блогер</p>
+                </div>
+              </header>
+              <div class="blockquote_body">
+                <p>Понимаете, то, что Гордон хочет взять у меня интервью — такая же глупость, как если бы Штрейхер позвонил Левитану во время Великой Отечественной войны и попытался взять.</p>
+              </div>
+            </blockquote>
+          </div>
+        </div>
       </article>
     </div>
   </section>
@@ -248,7 +266,11 @@
         <span class="btn">В России выявили более 7900 новых случаев заражения коронавирусом</span>
       </h3>
     </a>
-    <p class="item_data"><span>29 тыс. прочтений</span><span>&nbsp;&nbsp;·&nbsp;&nbsp;</span><span>3 часа назад</span></p>
+    <p class="item_data">
+      <span>29 тыс. прочтений</span>
+      <span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+      <span>3 часа назад</span>
+    </p>
   </div>
 
         
@@ -264,7 +286,11 @@
         <span class="btn">У Михаила Мишустина обнаружен коронавирус</span>
       </h3>
     </a>
-    <p class="item_data"><span>29 тыс. прочтений</span><span>&nbsp;&nbsp;·&nbsp;&nbsp;</span><span>3 часа назад</span></p>
+    <p class="item_data">
+      <span>29 тыс. прочтений</span>
+      <span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+      <span>3 часа назад</span>
+    </p>
   </div>
 
         
@@ -288,7 +314,11 @@
         <span class="btn">Европейские страны планируют ослабить ограничения из-за эпидемии</span>
       </h3>
     </a>
-    <p class="item_data"><span>29 тыс. прочтений</span><span>&nbsp;&nbsp;·&nbsp;&nbsp;</span><span>3 часа назад</span></p>
+    <p class="item_data">
+      <span>29 тыс. прочтений</span>
+      <span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+      <span>3 часа назад</span>
+    </p>
   </div>
 
         
@@ -312,7 +342,11 @@
         <span class="btn">Крупнейшие сталелитейные компании России объявили о сокращении инвестиций</span>
       </h3>
     </a>
-    <p class="item_data"><span>29 тыс. прочтений</span><span>&nbsp;&nbsp;·&nbsp;&nbsp;</span><span>3 часа назад</span></p>
+    <p class="item_data">
+      <span>29 тыс. прочтений</span>
+      <span>&nbsp;&nbsp;·&nbsp;&nbsp;</span>
+      <span>3 часа назад</span>
+    </p>
   </div>
 
       </div>
