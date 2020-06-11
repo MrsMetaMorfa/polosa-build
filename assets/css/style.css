@@ -827,8 +827,7 @@ a {
     justify-content: center;
     flex-wrap: wrap;
     position: relative;
-    max-height: 34px;
-    overflow-y: hidden; }
+    max-height: 34px; }
     .header_tags .tag {
       margin: 0 6px 0;
       display: inline-flex; }
