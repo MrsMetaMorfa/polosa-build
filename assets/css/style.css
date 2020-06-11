@@ -1236,7 +1236,7 @@ a {
       background: #F2F2F2; }
       .article_content figure picture img {
         margin: 0 auto;
-        height: 100%;
+        max-height: 100%;
         width: auto; }
     .article_content figure figcaption p {
       border-bottom: 1px solid #e0e0e0;

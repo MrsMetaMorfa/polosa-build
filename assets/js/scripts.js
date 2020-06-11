@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
           imageHeight = (itemWidth - 40) / 151 * 106;
         } else {
           imageHeight = (itemWidth - 40) / 53 * 76;
-          console.log(itemWidth);
         }
         Array.prototype.forEach.call(itemsOnPage, function(elem){
           let image = elem.querySelector('.item_image');
@@ -177,20 +176,21 @@ document.addEventListener('DOMContentLoaded', function() {
         let picture = document.querySelector('.article_image-picture'),
           caption = document.querySelector('.article_image-caption'),
           pictureHeight, pictureWidth;
-        console.log(article.offsetWidth / 2, article.querySelector('.wrapper').offsetWidth, (articleImage.offsetHeight + 80) > window.innerHeight);
+        picture.style.height = '';
         if (((article.offsetWidth / 2) < (article.querySelector('.wrapper').offsetWidth)) && (article.offsetWidth < 1100)) {
-          if ((articleImage.offsetHeight + 80) > window.innerHeight) {
+          console.log('tablet landscape');
+          if ((picture.offsetHeight + caption.offsetHeight + 80) > window.innerHeight) {
+            pictureWidth = (article.offsetWidth / 2) - 120;
+            pictureHeight = pictureWidth / 102 * 153;
+          } else {
             picture.style.height = (articleImage.offsetHeight - caption.offsetHeight) + 'px';
             pictureHeight = picture.offsetHeight;
             pictureWidth = pictureHeight / 153 * 102;
-          } else {
-            pictureWidth = (article.offsetWidth / 2) - 120;
-            pictureHeight = pictureWidth / 102 * 153;
           }
-          articleImage.style.width = pictureWidth + 'px';
+            articleImage.style.width = pictureWidth + 'px';
           document.querySelector('.article').style.paddingLeft = pictureWidth + 40 + 'px';
         } else {
-          if ((articleImage.offsetHeight + 80) > window.innerHeight) {
+          if ((picture.offsetHeight + caption.offsetHeight + 80) > window.innerHeight) {
             picture.style.height = (articleImage.offsetHeight - caption.offsetHeight) + 'px';
           }
           pictureHeight = picture.offsetHeight;
@@ -208,12 +208,18 @@ document.addEventListener('DOMContentLoaded', function() {
               bannersContainerHeight = bannersContainer.offsetHeight,
               bannersWrapperHeight = document.querySelector('.banners_wrapper').offsetHeight,
               contentHeight = document.querySelector('.content').offsetHeight,
-              blocksDifference = (contentHeight) / (bannersContainerHeight - bannersWrapperHeight + 48),
+              blocksDifference = (contentHeight) / (bannersContainerHeight - bannersWrapperHeight + 140),
               scrollDifference = pageYOffset - currentPageYPosition, bannersScrollNew;
             if ((bannersContainerHeight - bannersWrapperHeight) > 0) {
               bannersScrollNew = scrollDifference / blocksDifference;
               bannersScroll = bannersScroll + bannersScrollNew;
-              bannersContainer.style.transform = 'translateY(' + (bannersScroll * -1) + 'px)';
+              if ((bannersContainerHeight - bannersWrapperHeight) > bannersScroll) {
+                bannersContainer.style.transform = 'translateY(' + (bannersScroll  * -1) + 'px)';
+              } else if ((bannersContainerHeight - bannersWrapperHeight) <= bannersScroll) {
+                bannersContainer.style.transform = 'translateY(' + ((bannersContainerHeight - bannersWrapperHeight)  * -1) + 'px)';
+              } else if (bannersScroll < 0) {
+                bannersContainer.style.transform = 'translateY(' + 0 + 'px)';
+              }
             }
 
             if ((pageYOffset > 40) && (pageYOffset < (articleHeight + headerHeight - articleImage.offsetHeight - 100))) {
