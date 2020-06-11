@@ -1181,8 +1181,9 @@ a {
       margin: 0;
       font-size: 14px;
       line-height: 18px;
-      opacity: .5;
       white-space: nowrap; }
+      .article_image-caption p span {
+        opacity: .5; }
   .article_body {
     padding: 0;
     width: 640px;
@@ -1264,15 +1265,22 @@ a {
       background: #F2F2F2; }
       .article_content figure picture img {
         margin: 0 auto;
-        max-height: 100%;
-        width: auto; }
+        height: auto;
+        width: 100%; }
+      .article_content figure picture.vertical {
+        max-height: 400px;
+        padding: 24px 0; }
+        .article_content figure picture.vertical img {
+          max-height: 100%;
+          width: auto; }
     .article_content figure figcaption p {
       border-bottom: 1px solid #e0e0e0;
       padding: 9px 0;
       margin: 0;
-      opacity: .5;
       font-size: 14px;
       line-height: 18px; }
+      .article_content figure figcaption p span {
+        opacity: .5; }
   .article_socials {
     padding: 0 0 40px;
     border-bottom: 1px solid #e0e0e0; }
@@ -1394,14 +1402,16 @@ a {
     font-size: 18px;
     line-height: 23px; }
   .blockquote_body {
-    padding-left: 72px;
-    font-size: 18px;
-    line-height: 23px; }
+    padding-left: 72px; }
     .blockquote_body p {
-      margin-bottom: 16px; }
+      margin-bottom: 16px;
+      font-size: 18px;
+      line-height: 23px; }
     .blockquote_body footer {
       opacity: .5;
-      padding-bottom: 12px; }
+      padding-bottom: 12px;
+      font-size: 18px;
+      line-height: 23px; }
 
 .info {
   padding: 56px 0; }
@@ -1731,10 +1741,14 @@ a {
       color: #F2F2F2; }
     body .article_image-picture {
       background: #333333; }
+    body .article_image-caption p {
+      border-bottom-color: #333333; }
     body .article_content figure picture {
       background: #333333; }
     body .article_content figure img {
       background: #333333; }
+    body .article_content figure figcaption p {
+      border-bottom-color: #333333; }
     body .article_views {
       border-color: #333333; }
     body .article_info-top .share_list {
