@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log(articleImage.offsetWidth, articleImage.offsetHeight);
       document.querySelector('.article_image-picture').style.height = 'auto';
       articleImage.style.width = 'auto';
-      if ((window.innerWidth > window.innerHeight)) {
+      if ((window.innerWidth > window.innerHeight) && (window.innerWidth > 1024)) {
         let picture = document.querySelector('.article_image-picture'),
           caption = document.querySelector('.article_image-caption'),
           pictureHeight, pictureWidth;
