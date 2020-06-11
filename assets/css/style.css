@@ -1451,7 +1451,7 @@ a {
   .compilation_body {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); } }
 
-@media screen and (min-width: 1151px) and (max-width: 1342px) and (orientation: landscape) {
+@media screen and (min-width: 1151px) and (max-width: 1360px) and (orientation: landscape) {
   .article + .compilation .compilation_body .item:nth-of-type(4) {
     display: none; } }
 
