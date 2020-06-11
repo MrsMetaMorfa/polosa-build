@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let article = document.querySelector('.article'),
         articleImage = document.querySelector('.article_image');
     if (article) {
-      if ((window.innerWidth >= 1024) && (window.innerWidth > window.innerHeight)) {
+      if ((window.innerWidth > window.innerHeight)) {
         let picture = document.querySelector('.article_image-picture'),
           caption = document.querySelector('.article_image-caption'),
           pictureHeight, pictureWidth;
