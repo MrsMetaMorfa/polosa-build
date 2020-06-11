@@ -526,8 +526,8 @@ body {
   max-width: 100vw;
   background: #fff;
   color: #000;
-  font-size: 16px;
-  line-height: 1.3;
+  font-size: 18px;
+  line-height: 24px;
   min-height: 100vh;
   font-family: "PT Sans", Roboto, Helvetica, sans-serif; }
   body.dark {
