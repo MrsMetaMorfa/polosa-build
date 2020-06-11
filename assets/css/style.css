@@ -1741,6 +1741,8 @@ a {
     body .btn-default {
       background: #333333;
       color: #fff; }
+      body .btn-default:before {
+        background: rgba(255, 255, 255, 0.1); }
     body .btn-icon img {
       -webkit-filter: invert(1);
               filter: invert(1); }
