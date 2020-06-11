@@ -1451,6 +1451,10 @@ a {
   .compilation_body {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); } }
 
+@media screen and (min-width: 1151px) and (max-width: 1342px) and (orientation: landscape) {
+  .article + .compilation .compilation_body .item:nth-of-type(4) {
+    display: none; } }
+
 @media screen and (max-width: 1150px) and (orientation: landscape) {
   .banners {
     display: none; }
@@ -1612,6 +1616,7 @@ a {
     .article_image {
       position: static !important;
       width: calc(100% + 32px) !important;
+      max-width: calc(100% + 32px);
       max-height: 456px;
       margin: 0 -16px; }
       .article_image-picture {
@@ -1690,6 +1695,8 @@ a {
     width: 48px;
     min-width: 48px;
     height: 48px; }
+  .blockquote_body {
+    padding-left: 64px; }
   .rate, .nav, .item_tags, .article_info-top .tag, .last, .banners, .article_translation .translation_renew {
     display: none; } }
 
