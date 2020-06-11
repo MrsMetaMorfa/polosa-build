@@ -219,7 +219,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (document.querySelector('.header_tags') && !itsList && !itsListButton && listIsActive) {
           navList.classList.toggle('open');
         }
-        console.log(document.querySelector('.article .share'), shareList, !itsShareList, !itsShareListButton, shareListIsActive);
         if (document.querySelector('.article .share') && !itsShareList && !itsShareListButton && shareListIsActive) {
           shareList.classList.toggle('open');
         }
@@ -229,7 +228,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let article = document.querySelector('.article'),
         articleImage = document.querySelector('.article_image');
     if (article) {
-      console.log(articleImage.offsetWidth, articleImage.offsetHeight);
       document.querySelector('.article_image-picture').style.height = 'auto';
       articleImage.style.width = 'auto';
       if ((window.innerWidth > window.innerHeight) && (window.innerWidth > 1024)) {
@@ -238,7 +236,6 @@ document.addEventListener('DOMContentLoaded', function() {
           pictureHeight, pictureWidth;
         picture.style.height = 'auto';
         if (((article.offsetWidth / 2) < (article.querySelector('.wrapper').offsetWidth)) && (article.offsetWidth < 1100)) {
-          console.log('tablet landscape');
           if ((picture.offsetHeight + caption.offsetHeight + 80) > window.innerHeight) {
             picture.querySelector('.vertical').style.display = 'none';
             picture.querySelector('.horizontal').style.display = 'block';
@@ -247,14 +244,19 @@ document.addEventListener('DOMContentLoaded', function() {
           } else {
             picture.querySelector('.vertical').style.display = 'block';
             picture.querySelector('.horizontal').style.display = 'none';
-            picture.style.height = (articleImage.offsetHeight - caption.offsetHeight) + 'px';
+            if ((articleImage.offsetHeight - caption.offsetHeight) !== 0) {
+              picture.style.height = (articleImage.offsetHeight - caption.offsetHeight) + 'px';
+            }
             pictureHeight = picture.offsetHeight;
             pictureWidth = pictureHeight / 153 * 102;
           }
-            articleImage.style.width = pictureWidth + 'px';
-          document.querySelector('.article').style.paddingLeft = pictureWidth + 40 + 'px';
+          articleImage.style.width = pictureWidth + 'px';
+          if (pictureWidth > 256) {
+            document.querySelector('.article').style.paddingLeft = pictureWidth + 40 + 'px';
+          } else {
+            document.querySelector('.article').style.paddingLeft = 256 + 40 + 'px';
+          }
         } else {
-          console.log(picture.offsetHeight, caption.offsetHeight, window.innerHeight);
           if ((picture.offsetHeight + caption.offsetHeight + 80 + 40) >= window.innerHeight) {
             picture.querySelector('.vertical').style.display = 'none';
             picture.querySelector('.horizontal').style.display = 'block';
@@ -267,14 +269,17 @@ document.addEventListener('DOMContentLoaded', function() {
             pictureWidth = pictureHeight / 153 * 102;
           }
           articleImage.style.width = pictureWidth + 'px';
-          document.querySelector('.article').style.paddingLeft = pictureWidth + 40 + 'px';
+          if (pictureWidth > 256) {
+            document.querySelector('.article').style.paddingLeft = pictureWidth + 40 + 'px';
+          } else {
+            document.querySelector('.article').style.paddingLeft = 256 + 40 + 'px';
+          }
         }
         let currentPageYPosition = 0, bannersScroll = 0;
         document.onscroll = function () {
           if (document.querySelector('.article')) {
             let articleHeight = document.querySelector('section.article').offsetHeight,
               headerHeight = document.querySelector('.header').offsetHeight;
-
             let bannersContainer = document.querySelector('.banners_container'),
               bannersContainerHeight = bannersContainer.offsetHeight,
               bannersWrapperHeight = document.querySelector('.banners_wrapper').offsetHeight,
@@ -292,8 +297,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 bannersContainer.style.transform = 'translateY(' + 0 + 'px)';
               }
             }
-            console.log(pageYOffset, articleHeight + headerHeight - 80 - articleImage.offsetHeight);
-            console.log(articleHeight, headerHeight, articleImage.offsetHeight);
             if ((pageYOffset > 73) && (pageYOffset < (headerHeight + articleHeight - 80 - (articleImage.offsetHeight + 40)))) {
               articleImage.style.position = 'fixed';
               articleImage.style.top = '40px';
