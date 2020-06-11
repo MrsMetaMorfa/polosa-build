@@ -240,9 +240,13 @@ document.addEventListener('DOMContentLoaded', function() {
         if (((article.offsetWidth / 2) < (article.querySelector('.wrapper').offsetWidth)) && (article.offsetWidth < 1100)) {
           console.log('tablet landscape');
           if ((picture.offsetHeight + caption.offsetHeight + 80) > window.innerHeight) {
-            pictureWidth = (article.offsetWidth / 2) - 120;
-            pictureHeight = pictureWidth / 102 * 153;
+            picture.querySelector('.vertical').style.display = 'none';
+            picture.querySelector('.horizontal').style.display = 'block';
+            pictureWidth = picture.offsetWidth;
+            pictureHeight = pictureWidth / 125 * 88;
           } else {
+            picture.querySelector('.vertical').style.display = 'block';
+            picture.querySelector('.horizontal').style.display = 'none';
             picture.style.height = (articleImage.offsetHeight - caption.offsetHeight) + 'px';
             pictureHeight = picture.offsetHeight;
             pictureWidth = pictureHeight / 153 * 102;
@@ -250,11 +254,18 @@ document.addEventListener('DOMContentLoaded', function() {
             articleImage.style.width = pictureWidth + 'px';
           document.querySelector('.article').style.paddingLeft = pictureWidth + 40 + 'px';
         } else {
-          if ((picture.offsetHeight + caption.offsetHeight + 80) > window.innerHeight) {
-            picture.style.height = (articleImage.offsetHeight - caption.offsetHeight) + 'px';
+          console.log(picture.offsetHeight, caption.offsetHeight, window.innerHeight);
+          if ((picture.offsetHeight + caption.offsetHeight + 80 + 40) >= window.innerHeight) {
+            picture.querySelector('.vertical').style.display = 'none';
+            picture.querySelector('.horizontal').style.display = 'block';
+            pictureWidth = picture.offsetWidth;
+            pictureHeight = pictureWidth / 125 * 88;
+          } else {
+            picture.querySelector('.vertical').style.display = 'block';
+            picture.querySelector('.horizontal').style.display = 'none';
+            pictureHeight = picture.offsetHeight;
+            pictureWidth = pictureHeight / 153 * 102;
           }
-          pictureHeight = picture.offsetHeight;
-          pictureWidth = pictureHeight / 153 * 102;
           articleImage.style.width = pictureWidth + 'px';
           document.querySelector('.article').style.paddingLeft = pictureWidth + 40 + 'px';
         }
