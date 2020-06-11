@@ -39,7 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (itemsOnPage[0].classList.contains('wide')) {
           imageHeight = (itemWidth - 40) / 151 * 106;
         } else {
-          imageHeight = (itemWidth - 40) / 76 * 53;
+          imageHeight = (itemWidth - 40) / 53 * 76;
+          console.log(itemWidth);
         }
         Array.prototype.forEach.call(itemsOnPage, function(elem){
           let image = elem.querySelector('.item_image');
@@ -176,14 +177,14 @@ document.addEventListener('DOMContentLoaded', function() {
         let picture = document.querySelector('.article_image-picture'),
           caption = document.querySelector('.article_image-caption'),
           pictureHeight, pictureWidth;
-        console.log(article.offsetWidth, article.querySelector('.wrapper').offsetWidth);
-        if ((article.offsetWidth / 2) < (article.querySelector('.wrapper').offsetWidth)) {
+        console.log(article.offsetWidth / 2, article.querySelector('.wrapper').offsetWidth, (articleImage.offsetHeight + 80) > window.innerHeight);
+        if (((article.offsetWidth / 2) < (article.querySelector('.wrapper').offsetWidth)) && (article.offsetWidth < 1100)) {
           if ((articleImage.offsetHeight + 80) > window.innerHeight) {
             picture.style.height = (articleImage.offsetHeight - caption.offsetHeight) + 'px';
             pictureHeight = picture.offsetHeight;
             pictureWidth = pictureHeight / 153 * 102;
           } else {
-            pictureWidth = (article.offsetWidth / 2) - 80;
+            pictureWidth = (article.offsetWidth / 2) - 120;
             pictureHeight = pictureWidth / 102 * 153;
           }
           articleImage.style.width = pictureWidth + 'px';
@@ -235,6 +236,8 @@ document.addEventListener('DOMContentLoaded', function() {
             currentPageYPosition = pageYOffset;
           }
         };
+      } else {
+        document.querySelector('.article').style.paddingLeft = '16px';
       }
     }
   }

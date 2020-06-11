@@ -55,6 +55,29 @@
     </div>
   </nav>
   <div class="header_functional container">
+    <div class="header_notification">
+      <button class="btn btn-icon" type="button">
+        <img src="assets/img/notifications-icon.svg" alt="Toggle Menu Icon" />
+      </button>
+      <div class="notification">
+        <p class="notification_empty">У вас пока нет непрочитанных уведомлений</p>
+        <ul class="notification_list">
+          <li class="notification_item">Notification #1</li>
+          <li class="notification_item">Notification #2</li>
+          <li class="notification_item">Notification #3</li>
+        </ul>
+      </div>
+    </div>
+    <div class="header_language">
+      <button class="btn btn-icon" type="button">
+        <img src="assets/img/language-icon.svg" alt="Toggle Menu Icon" />
+      </button>
+      <ul class="language">
+        <li class="language_item">
+          <button class="btn language_link" type="button">Русский</button>
+        </li>
+      </ul>
+    </div>
     <nav class="header_menu">
       <button class="btn btn-icon" type="button">
         <img src="assets/img/menu-icon.svg" alt="Toggle Menu Icon" />
@@ -71,29 +94,6 @@
         </li>
       </ul>
     </nav>
-    <div class="header_language">
-      <button class="btn btn-icon" type="button">
-        <img src="assets/img/language-icon.svg" alt="Toggle Menu Icon" />
-      </button>
-      <ul class="language">
-        <li class="language_item">
-          <button class="btn language_link" type="button">Русский</button>
-        </li>
-      </ul>
-    </div>
-    <div class="header_notification">
-      <button class="btn btn-icon" type="button">
-        <img src="assets/img/notifications-icon.svg" alt="Toggle Menu Icon" />
-      </button>
-      <div class="notification">
-        <p class="notification_empty">У вас пока нет непрочитанных уведомлений</p>
-        <ul class="notification_list">
-          <li class="notification_item">Notification #1</li>
-          <li class="notification_item">Notification #2</li>
-          <li class="notification_item">Notification #3</li>
-        </ul>
-      </div>
-    </div>
   </div>
 </header>
 
@@ -105,49 +105,49 @@
 
   <section class="last wrapper container">
     
-  <div class="item container">
-    <a href="article.html" class="btn item_image">
+  <a href="article.html" class="item container">
+    <span class="btn item_image">
       <img src="assets/img/image 17.jpg" alt="В России выявили более 7900 новых случаев заражения коронавирусом">
-    </a>
-    <div class="item_body">
+    </span>
+    <span class="item_body">
       <h3 class="item_title">
-        <a href="article.html" class="btn">В России выявили более 7900 новых случаев заражения коронавирусом</a>
+        <span class="btn">В России выявили более 7900 новых случаев заражения коронавирусом</span>
       </h3>
       
         <p class="item_data"><mark>Новость дополняется</mark> <span>·</span> <span>Обновлено 3 часа назад</span></p>
       
-    </div>
-  </div>
+    </span>
+  </a>
 
     
-  <div class="item container">
-    <a href="article.html" class="btn item_image">
+  <a href="article.html" class="item container">
+    <span class="btn item_image">
       <img src="assets/img/image 17.jpg" alt="В России выявили более 7900 новых случаев заражения коронавирусом">
-    </a>
-    <div class="item_body">
+    </span>
+    <span class="item_body">
       <h3 class="item_title">
-        <a href="article.html" class="btn">В России выявили более 7900 новых случаев заражения коронавирусом</a>
+        <span class="btn">В России выявили более 7900 новых случаев заражения коронавирусом</span>
       </h3>
       
         <p class="item_data"><span>29 тыс. прочтений</span></p>
       
-    </div>
-  </div>
+    </span>
+  </a>
 
     
-  <div class="item container">
-    <a href="article.html" class="btn item_image">
+  <a href="article.html" class="item container">
+    <span class="btn item_image">
       <img src="assets/img/image 17.jpg" alt="В России выявили более 7900 новых случаев заражения коронавирусом">
-    </a>
-    <div class="item_body">
+    </span>
+    <span class="item_body">
       <h3 class="item_title">
-        <a href="article.html" class="btn">В России выявили более 7900 новых случаев заражения коронавирусом</a>
+        <span class="btn">В России выявили более 7900 новых случаев заражения коронавирусом</span>
       </h3>
       
         <p class="item_data"><span>29 тыс. прочтений</span></p>
       
-    </div>
-  </div>
+    </span>
+  </a>
 
   </section>
 
@@ -156,156 +156,168 @@
       <div class="compilation_body container">
       
   <div class="item wide">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17.jpg" alt="В России выявили более 7900 новых случаев заражения коронавирусом">
-    </a>
     <div class="item_tags container">
       
         
-          <button type="button"
-                  class="btn btn-default tag yellow  color-dark"
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag yellow  color-dark"
+            id="">
             Выбор редакции
-          </button>
+          </a>
         
-          <button type="button"
-                  class="btn btn-default tag red color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag red color-white "
+            id="">
             Важно
-          </button>
+          </a>
         
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">В России выявили более 7900 новых случаев заражения коронавирусом</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17.jpg" alt="В России выявили более 7900 новых случаев заражения коронавирусом">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">В России выявили более 7900 новых случаев заражения коронавирусом</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
       
   <div class="item ">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17 (1).jpg" alt="У Михаила Мишустина обнаружен коронавирус">
-    </a>
     <div class="item_tags container">
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">У Михаила Мишустина обнаружен коронавирус</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17 (1).jpg" alt="У Михаила Мишустина обнаружен коронавирус">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">У Михаила Мишустина обнаружен коронавирус</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
       
   <div class="item ">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17 (2).jpg" alt="Европейские страны планируют ослабить ограничения из-за эпидемии">
-    </a>
     <div class="item_tags container">
       
         
-          <button type="button"
-                  class="btn btn-default tag green color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag green color-white "
+            id="">
             Экономика
-          </button>
+          </a>
         
-          <button type="button"
-                  class="btn btn-default tag red color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag red color-white "
+            id="">
             Важно
-          </button>
+          </a>
         
-          <button type="button"
-                  class="btn btn-default tag blue color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag blue color-white "
+            id="">
             Мир
-          </button>
+          </a>
         
-          <button type="button"
-                  class="btn btn-default tag blue color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag blue color-white "
+            id="">
             Политика
-          </button>
+          </a>
         
-          <button type="button"
-                  class="btn btn-default tag yellow color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag yellow color-white "
+            id="">
             Коронавирус
-          </button>
+          </a>
         
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">Европейские страны планируют ослабить ограничения из-за эпидемии</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17 (2).jpg" alt="Европейские страны планируют ослабить ограничения из-за эпидемии">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">Европейские страны планируют ослабить ограничения из-за эпидемии</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
       
   <div class="item ">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17 (3).jpg" alt="Крупнейшие сталелитейные компании России объявили о сокращении инвестиций">
-    </a>
     <div class="item_tags container">
       
         
-          <button type="button"
-                  class="btn btn-default tag red color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag red color-white "
+            id="">
             Важно
-          </button>
+          </a>
         
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">Крупнейшие сталелитейные компании России объявили о сокращении инвестиций</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17 (3).jpg" alt="Крупнейшие сталелитейные компании России объявили о сокращении инвестиций">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">Крупнейшие сталелитейные компании России объявили о сокращении инвестиций</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
       
   <div class="item ">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17 (2).jpg" alt="Европейские страны планируют ослабить ограничения из-за эпидемии">
-    </a>
     <div class="item_tags container">
       
         
-          <button type="button"
-                  class="btn btn-default tag green color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag green color-white "
+            id="">
             Экономика
-          </button>
+          </a>
         
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">Европейские страны планируют ослабить ограничения из-за эпидемии</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17 (2).jpg" alt="Европейские страны планируют ослабить ограничения из-за эпидемии">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">Европейские страны планируют ослабить ограничения из-за эпидемии</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
       
   <div class="item wide">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17 (3).jpg" alt="Крупнейшие сталелитейные компании России объявили о сокращении инвестиций">
-    </a>
     <div class="item_tags container">
       
         
-          <button type="button"
-                  class="btn btn-default tag red color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag red color-white "
+            id="">
             Важно
-          </button>
+          </a>
         
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">Крупнейшие сталелитейные компании России объявили о сокращении инвестиций</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17 (3).jpg" alt="Крупнейшие сталелитейные компании России объявили о сокращении инвестиций">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">Крупнейшие сталелитейные компании России объявили о сокращении инвестиций</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
     </div>
@@ -321,146 +333,160 @@
       <div class="compilation_body container">
       
   <div class="item ">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17.jpg" alt="В России выявили более 7900 новых случаев заражения коронавирусом">
-    </a>
     <div class="item_tags container">
       
         
-          <button type="button"
-                  class="btn btn-default tag yellow  color-dark"
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag yellow  color-dark"
+            id="">
             Выбор редакции
-          </button>
+          </a>
         
-          <button type="button"
-                  class="btn btn-default tag red color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag red color-white "
+            id="">
             Важно
-          </button>
+          </a>
         
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">В России выявили более 7900 новых случаев заражения коронавирусом</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17.jpg" alt="В России выявили более 7900 новых случаев заражения коронавирусом">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">В России выявили более 7900 новых случаев заражения коронавирусом</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
       
   <div class="item ">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17 (1).jpg" alt="У Михаила Мишустина обнаружен коронавирус">
-    </a>
     <div class="item_tags container">
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">У Михаила Мишустина обнаружен коронавирус</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17 (1).jpg" alt="У Михаила Мишустина обнаружен коронавирус">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">У Михаила Мишустина обнаружен коронавирус</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
       
   <div class="item wide">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17 (2).jpg" alt="Европейские страны планируют ослабить ограничения из-за эпидемии">
-    </a>
     <div class="item_tags container">
       
         
-          <button type="button"
-                  class="btn btn-default tag green color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag green color-white "
+            id="">
             Экономика
-          </button>
+          </a>
         
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">Европейские страны планируют ослабить ограничения из-за эпидемии</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17 (2).jpg" alt="Европейские страны планируют ослабить ограничения из-за эпидемии">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">Европейские страны планируют ослабить ограничения из-за эпидемии</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
       
   <div class="item ">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17 (3).jpg" alt="Крупнейшие сталелитейные компании России объявили о сокращении инвестиций">
-    </a>
     <div class="item_tags container">
       
         
-          <button type="button"
-                  class="btn btn-default tag red color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag red color-white "
+            id="">
             Важно
-          </button>
+          </a>
         
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">Крупнейшие сталелитейные компании России объявили о сокращении инвестиций</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17 (3).jpg" alt="Крупнейшие сталелитейные компании России объявили о сокращении инвестиций">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">Крупнейшие сталелитейные компании России объявили о сокращении инвестиций</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
       
   <div class="item ">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17 (1).jpg" alt="У Михаила Мишустина обнаружен коронавирус">
-    </a>
     <div class="item_tags container">
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">У Михаила Мишустина обнаружен коронавирус</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17 (1).jpg" alt="У Михаила Мишустина обнаружен коронавирус">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">У Михаила Мишустина обнаружен коронавирус</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
       
   <div class="item ">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17 (2).jpg" alt="Европейские страны планируют ослабить ограничения из-за эпидемии">
-    </a>
     <div class="item_tags container">
       
         
-          <button type="button"
-                  class="btn btn-default tag green color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag green color-white "
+            id="">
             Экономика
-          </button>
+          </a>
         
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">Европейские страны планируют ослабить ограничения из-за эпидемии</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17 (2).jpg" alt="Европейские страны планируют ослабить ограничения из-за эпидемии">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">Европейские страны планируют ослабить ограничения из-за эпидемии</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
       
   <div class="item ">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17 (3).jpg" alt="Крупнейшие сталелитейные компании России объявили о сокращении инвестиций">
-    </a>
     <div class="item_tags container">
       
         
-          <button type="button"
-                  class="btn btn-default tag red color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag red color-white "
+            id="">
             Важно
-          </button>
+          </a>
         
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">Крупнейшие сталелитейные компании России объявили о сокращении инвестиций</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17 (3).jpg" alt="Крупнейшие сталелитейные компании России объявили о сокращении инвестиций">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">Крупнейшие сталелитейные компании России объявили о сокращении инвестиций</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
     </div>
@@ -476,88 +502,96 @@
       <div class="compilation_body container">
       
   <div class="item ">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17.jpg" alt="В России выявили более 7900 новых случаев заражения коронавирусом">
-    </a>
     <div class="item_tags container">
       
         
-          <button type="button"
-                  class="btn btn-default tag yellow  color-dark"
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag yellow  color-dark"
+            id="">
             Выбор редакции
-          </button>
+          </a>
         
-          <button type="button"
-                  class="btn btn-default tag red color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag red color-white "
+            id="">
             Важно
-          </button>
+          </a>
         
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">В России выявили более 7900 новых случаев заражения коронавирусом</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17.jpg" alt="В России выявили более 7900 новых случаев заражения коронавирусом">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">В России выявили более 7900 новых случаев заражения коронавирусом</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
       
   <div class="item ">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17 (1).jpg" alt="У Михаила Мишустина обнаружен коронавирус">
-    </a>
     <div class="item_tags container">
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">У Михаила Мишустина обнаружен коронавирус</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17 (1).jpg" alt="У Михаила Мишустина обнаружен коронавирус">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">У Михаила Мишустина обнаружен коронавирус</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
       
   <div class="item ">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17 (2).jpg" alt="Европейские страны планируют ослабить ограничения из-за эпидемии">
-    </a>
     <div class="item_tags container">
       
         
-          <button type="button"
-                  class="btn btn-default tag green color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag green color-white "
+            id="">
             Экономика
-          </button>
+          </a>
         
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">Европейские страны планируют ослабить ограничения из-за эпидемии</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17 (2).jpg" alt="Европейские страны планируют ослабить ограничения из-за эпидемии">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">Европейские страны планируют ослабить ограничения из-за эпидемии</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
       
   <div class="item ">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17 (3).jpg" alt="Крупнейшие сталелитейные компании России объявили о сокращении инвестиций">
-    </a>
     <div class="item_tags container">
       
         
-          <button type="button"
-                  class="btn btn-default tag red color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag red color-white "
+            id="">
             Важно
-          </button>
+          </a>
         
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">Крупнейшие сталелитейные компании России объявили о сокращении инвестиций</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17 (3).jpg" alt="Крупнейшие сталелитейные компании России объявили о сокращении инвестиций">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">Крупнейшие сталелитейные компании России объявили о сокращении инвестиций</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
     </div>
@@ -573,88 +607,96 @@
       <div class="compilation_body container">
       
   <div class="item ">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17.jpg" alt="В России выявили более 7900 новых случаев заражения коронавирусом">
-    </a>
     <div class="item_tags container">
       
         
-          <button type="button"
-                  class="btn btn-default tag yellow  color-dark"
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag yellow  color-dark"
+            id="">
             Выбор редакции
-          </button>
+          </a>
         
-          <button type="button"
-                  class="btn btn-default tag red color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag red color-white "
+            id="">
             Важно
-          </button>
+          </a>
         
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">В России выявили более 7900 новых случаев заражения коронавирусом</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17.jpg" alt="В России выявили более 7900 новых случаев заражения коронавирусом">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">В России выявили более 7900 новых случаев заражения коронавирусом</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
       
   <div class="item ">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17 (1).jpg" alt="У Михаила Мишустина обнаружен коронавирус">
-    </a>
     <div class="item_tags container">
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">У Михаила Мишустина обнаружен коронавирус</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17 (1).jpg" alt="У Михаила Мишустина обнаружен коронавирус">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">У Михаила Мишустина обнаружен коронавирус</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
       
   <div class="item ">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17 (2).jpg" alt="Европейские страны планируют ослабить ограничения из-за эпидемии">
-    </a>
     <div class="item_tags container">
       
         
-          <button type="button"
-                  class="btn btn-default tag green color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag green color-white "
+            id="">
             Экономика
-          </button>
+          </a>
         
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">Европейские страны планируют ослабить ограничения из-за эпидемии</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17 (2).jpg" alt="Европейские страны планируют ослабить ограничения из-за эпидемии">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">Европейские страны планируют ослабить ограничения из-за эпидемии</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
       
   <div class="item ">
-    <a href="article.html" class="btn item_image">
-      <img src="assets/img/image 17 (3).jpg" alt="Крупнейшие сталелитейные компании России объявили о сокращении инвестиций">
-    </a>
     <div class="item_tags container">
       
         
-          <button type="button"
-                  class="btn btn-default tag red color-white "
-                  id="">
+          <a href="inner.html"
+            class="btn btn-default tag red color-white "
+            id="">
             Важно
-          </button>
+          </a>
         
       
     </div>
-    <h3 class="item_title">
-      <a href="article.html" class="btn">Крупнейшие сталелитейные компании России объявили о сокращении инвестиций</a>
-    </h3>
-    <p class="item_data">29 тыс. прочтений</p>
+    <a href="article.html" class="btn item_link">
+      <span class="btn item_image">
+        <img src="assets/img/image 17 (3).jpg" alt="Крупнейшие сталелитейные компании России объявили о сокращении инвестиций">
+      </span>
+      <h3 class="item_title">
+        <span class="btn">Крупнейшие сталелитейные компании России объявили о сокращении инвестиций</span>
+      </h3>
+    </a>
+    <p class="item_data"><span>29 тыс. прочтений</span> <span> · </span> <span>3 часа назад</span></p>
   </div>
 
     </div>
