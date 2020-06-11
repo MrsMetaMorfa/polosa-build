@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let article = document.querySelector('.article'),
         articleImage = document.querySelector('.article_image');
-    if (article) {
+    if (articleImage.offsetHeight > 0 || articleImage.offsetWidth < 0){
       if ((window.innerWidth > window.innerHeight)) {
         let picture = document.querySelector('.article_image-picture'),
           caption = document.querySelector('.article_image-caption'),
