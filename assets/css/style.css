@@ -1451,6 +1451,12 @@ a {
   .compilation_body {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); } }
 
+@media screen and (max-width: 1150px) and (orientation: landscape) {
+  .banners {
+    display: none; }
+    .banners + .content-wrapper {
+      padding-right: 0; } }
+
 @media screen and (max-width: 1024px) and (orientation: portrait) {
   body {
     font-size: 18px; }
