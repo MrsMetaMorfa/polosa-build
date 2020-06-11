@@ -1204,7 +1204,7 @@ a {
       .article_info-top .btn:not(:last-child) {
         margin-right: 12px; }
       .article_info-top .btn.blue {
-        background: #205BF6; }
+        background: #205BF6 !important; }
     .article_info-top .share {
       display: block;
       position: relative; }

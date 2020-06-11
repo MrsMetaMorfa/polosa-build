@@ -228,12 +228,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let article = document.querySelector('.article'),
         articleImage = document.querySelector('.article_image');
-    if (articleImage.offsetHeight > 0 || articleImage.offsetWidth < 0){
+    if (article) {
       if ((window.innerWidth > window.innerHeight)) {
         let picture = document.querySelector('.article_image-picture'),
           caption = document.querySelector('.article_image-caption'),
           pictureHeight, pictureWidth;
-        picture.style.height = '';
+        picture.style.height = 'auto';
+        picture.style.width = 'auto';
         if (((article.offsetWidth / 2) < (article.querySelector('.wrapper').offsetWidth)) && (article.offsetWidth < 1100)) {
           console.log('tablet landscape');
           if ((picture.offsetHeight + caption.offsetHeight + 80) > window.innerHeight) {
