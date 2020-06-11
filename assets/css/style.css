@@ -1323,10 +1323,10 @@ a {
       line-height: 24px;
       font-weight: normal; }
       .article_translation .translation_title img {
-        width: 20px;
-        height: 19px;
-        min-width: 20px;
-        margin-right: 10px; }
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+        margin-right: 8px; }
     .article_translation .translation_renew {
       margin-bottom: 0;
       margin-left: 16px;
@@ -1760,8 +1760,8 @@ a {
         background: rgba(0, 0, 0, 0.1); }
     body .item_image img {
       background: #333333; }
-    body .main .tag.current:after {
-      -webkit-filter: invert(0.92);
-              filter: invert(0.92); }
     body .tag:before {
-      background: rgba(255, 255, 255, 0.1); } }
+      background: rgba(255, 255, 255, 0.1); }
+    body .tag.current:after {
+      -webkit-filter: invert(0.92);
+              filter: invert(0.92); } }

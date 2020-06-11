@@ -229,12 +229,14 @@ document.addEventListener('DOMContentLoaded', function() {
     let article = document.querySelector('.article'),
         articleImage = document.querySelector('.article_image');
     if (article) {
+      console.log(articleImage.offsetWidth, articleImage.offsetHeight);
+      document.querySelector('.article_image-picture').style.height = 'auto';
+      articleImage.style.width = 'auto';
       if ((window.innerWidth > window.innerHeight)) {
         let picture = document.querySelector('.article_image-picture'),
           caption = document.querySelector('.article_image-caption'),
           pictureHeight, pictureWidth;
         picture.style.height = 'auto';
-        picture.style.width = 'auto';
         if (((article.offsetWidth / 2) < (article.querySelector('.wrapper').offsetWidth)) && (article.offsetWidth < 1100)) {
           console.log('tablet landscape');
           if ((picture.offsetHeight + caption.offsetHeight + 80) > window.innerHeight) {
@@ -279,13 +281,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 bannersContainer.style.transform = 'translateY(' + 0 + 'px)';
               }
             }
-
-            if ((pageYOffset > 40) && (pageYOffset < (articleHeight + headerHeight - articleImage.offsetHeight - 100))) {
+            console.log(pageYOffset, articleHeight + headerHeight - 80 - articleImage.offsetHeight);
+            console.log(articleHeight, headerHeight, articleImage.offsetHeight);
+            if ((pageYOffset > 73) && (pageYOffset < (headerHeight + articleHeight - 80 - (articleImage.offsetHeight + 40)))) {
               articleImage.style.position = 'fixed';
               articleImage.style.top = '40px';
               articleImage.style.bottom = 'auto';
               articleImage.style.width = articleImage.offsetWidth + 'px';
-            } else if ((pageYOffset > 40) && (pageYOffset > (articleHeight + headerHeight - articleImage.offsetHeight - 100))) {
+            } else if ((pageYOffset > 73) && (pageYOffset >= (headerHeight + articleHeight - 80 - (articleImage.offsetHeight + 40)))) {
               articleImage.style.position = 'absolute';
               articleImage.style.top = 'auto';
               articleImage.style.bottom = '80px';
